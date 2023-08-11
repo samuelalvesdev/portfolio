@@ -11,7 +11,6 @@ window.addEventListener("scroll", () => {
 /*---------- Sticky Navbar ----------*/
 function stickyNavBar() {
     header.classList.toggle("scrolled", window.pageYOffset>0);
-    console.log("qualfoi man");
 }
 
 
