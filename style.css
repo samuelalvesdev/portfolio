@@ -582,3 +582,21 @@ header.scrolled .logo{
     
 
 }
+/*---------- Services Section Styling ----------*/
+
+.services .container{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    column-gap: 6rem;
+    align-items: center;
+
+}
+
+.milestones{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    justify-items: flex-start;
+}
