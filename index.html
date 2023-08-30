@@ -530,6 +530,25 @@
         </section>
         
         <section class="portfolio section">
+          <div class="modal">
+            <div class="modal-overlay"></div>
+            <div class="slider-wrap">
+              <div class="prev-btn navigation">
+                <i class="uil uil-angle-left-b"></i>
+              </div>
+              <div class="images">
+                <img src="assets/port1.jpg">
+                <img src="assets/port2.png">
+                <img src="assets/port3.jpg">
+                <img src="assets/port4.png">
+                <img src="assets/port5.png">
+                <img src="assets/port6.jpg">
+              </div>
+              <div class="next-btn navigation">
+                <i class="uil uil-angle-right-b"></i>
+              </div>
+            </div>
+          </div>
         <div class="container">
           <div class="portfolio-header">
             <div class="portfolio-title">
@@ -537,14 +556,14 @@
               <h1 class="heading">Ultimos projetos</h1>
             </div>
             <div class="filter-btns">
-              <button class="filter-btn">Tudo</button>
-              <button class="filter-btn">Produtos</button>
-              <button class="filter-btn">Interativos</button>
-              <button class="filter-btn">Web</button>
+              <button class="filter-btn" data-filter="all">Tudo</button>
+              <button class="filter-btn" data-filter=".product">Produtos</button>
+              <button class="filter-btn" data-filter=".inter">Interativos</button>
+              <button class="filter-btn" data-filter=".web">Web App</button>
             </div>
           </div>
           <div class="portfolio-gallery">
-            <div class="prt-card">
+            <div class="mix prt-card inter">
               <div class="prt-image">
                 <img src="./assets/port1.jpg" alt="">
                 <div class="prt-overlay">
@@ -561,7 +580,7 @@
                 <a href="#" class="btn secondary-btn sm">Saiba mais</a>
               </div>
             </div>
-            <div class="prt-card">
+            <div class="mix prt-card product">
               <div class="prt-image">
                 <img src="./assets/port2.png" alt="">
                 <div class="prt-overlay">
@@ -578,7 +597,7 @@
                 <a href="#" class="btn secondary-btn sm">Saiba mais</a>
               </div>
             </div>
-            <div class="prt-card">
+            <div class="mix prt-card web">
               <div class="prt-image">
                 <img src="./assets/port3.jpg" alt="">
                 <div class="prt-overlay">
@@ -595,7 +614,7 @@
                 <a href="#" class="btn secondary-btn sm">Saiba mais</a>
               </div>
             </div>
-            <div class="prt-card">
+            <div class="mix prt-card web">
               <div class="prt-image">
                 <img src="./assets/port4.png" alt="">
                 <div class="prt-overlay">
@@ -612,7 +631,7 @@
                 <a href="#" class="btn secondary-btn sm">Saiba mais</a>
               </div>
             </div>
-            <div class="prt-card">
+            <div class="mix prt-card inter">
               <div class="prt-image">
                 <img src="./assets/port5.png" alt="">
                 <div class="prt-overlay">
@@ -629,7 +648,7 @@
                 <a href="#" class="btn secondary-btn sm">Saiba mais</a>
               </div>
             </div>
-            <div class="prt-card">
+            <div class="mix prt-card web">
               <div class="prt-image">
                 <img src="./assets/port6.jpg" alt="">
                 <div class="prt-overlay">
@@ -652,7 +671,7 @@
     </main>
 
     <!--JavaScript Files-->
-
+    <script src="./mixitup.min.js"></script>
     <script src="./app.js"></script>
 </body>
 
