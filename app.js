@@ -124,14 +124,14 @@ zoom_icons.forEach((icn, i) => icn.addEventListener("click", () => {
     document.body.classList.add("stopScrolling");
     currentIndex = i;
     changeImage(currentIndex);
-
+    
 }));
 
 modal_overlay.addEventListener("click", () => {
-
+    
     prt_section.classList.remove("open");
     document.body.classList.remove("stopScrolling");
-
+    
 });
 
 prev_btn.addEventListener("click", () => {
@@ -157,3 +157,16 @@ function changeImage(index){
     images.forEach(img => img.classList.remove("showImage"));
     images[index].classList.add(("showImage"));
 }
+
+/*---------- Swiper slide Animation ----------*/
+
+const swiper = new Swiper(".swiper", {
+    loop: true,
+    speed: 500,
+    autoplay: true,
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
