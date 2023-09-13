@@ -29,6 +29,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   background-color: var(--bg-color);
@@ -269,7 +273,7 @@ header.scrolled .logo {
   font-size: 0.75rem;
   letter-spacing: 0.5px;
   color: var(--text-color);
-  font-weight: 750;
+  font-weight: 500;
   opacity: 0.9;
   transition: 0.3s;
 }
@@ -288,11 +292,13 @@ header.scrolled .logo {
   transition: 0.3s;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: var(--heading-color);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 100%;
   opacity: 0.2;
 }
@@ -1124,9 +1130,9 @@ footer .social-media {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .3s;
-}
-.social-link:hover{
-    color: var(--main-color-1);
+  transition: 0.3s;
 }
 
+.social-link:hover {
+  color: var(--main-color-1);
+}
