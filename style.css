@@ -690,7 +690,7 @@ header.scrolled .logo {
   transition: 0.3s background-color;
 }
 .srv-card h3 {
-  columns: var(--heading-color);
+  color: var(--heading-color);
   font-weight: 500;
   font-size: 1.05rem;
   transition: 0.3s color;
